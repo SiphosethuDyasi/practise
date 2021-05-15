@@ -1,15 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react';
 import './index.css';
-import Game from './Game';
+import App from './App';
+import ReactDOM from 'react-dom';
 
+class Index extends Component {
+
+    render() {
+        return (
+            <div>
+                <React.StrictMode>
+                    <App />
+
+                </React.StrictMode>
+
+            </div>
+
+        );
+    }
+}
 
 
 
 ReactDOM.render(
-    <Game />,
+    <Index />,
     document.getElementById('root')
 );
-
-
-
